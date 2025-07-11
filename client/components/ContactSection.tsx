@@ -1,0 +1,223 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  MessageCircle,
+  Clock,
+  Globe,
+} from "lucide-react";
+
+export default function ContactSection() {
+  const contactInfo = [
+    {
+      icon: <Mail className="w-6 h-6" />,
+      title: "Email Us",
+      content: "hello@scalinova.com",
+      description: "Send us an email anytime",
+    },
+    {
+      icon: <Phone className="w-6 h-6" />,
+      title: "Call Us",
+      content: "+1 (555) 123-4567",
+      description: "Mon-Fri from 8am to 5pm",
+    },
+    {
+      icon: <MapPin className="w-6 h-6" />,
+      title: "Visit Us",
+      content: "123 Innovation Drive",
+      description: "San Francisco, CA 94105",
+    },
+    {
+      icon: <Clock className="w-6 h-6" />,
+      title: "Business Hours",
+      content: "Mon - Fri: 8am - 5pm",
+      description: "Weekend support available",
+    },
+  ];
+
+  return (
+    <section id="contact" className="py-20 lg:py-32 bg-muted/20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div className="flex items-center justify-center mb-4">
+            <div className="flex items-center space-x-2 bg-primary/10 px-4 py-2 rounded-full">
+              <MessageCircle className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium text-primary">
+                Get In Touch
+              </span>
+            </div>
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            Ready to Start Your{" "}
+            <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+              Digital Journey?
+            </span>
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Let's discuss how we can help transform your business with our
+            innovative solutions. Reach out to us and let's build something
+            amazing together.
+          </p>
+        </div>
+
+        <div className="lg:grid lg:grid-cols-3 lg:gap-12">
+          {/* Contact Info */}
+          <div className="lg:col-span-1 mb-12 lg:mb-0">
+            <div className="space-y-6">
+              {contactInfo.map((info, index) => (
+                <Card
+                  key={index}
+                  className="border-border bg-card hover:shadow-lg transition-shadow duration-300"
+                >
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="p-3 bg-primary/10 rounded-lg text-primary">
+                        {info.icon}
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-foreground mb-1">
+                          {info.title}
+                        </h3>
+                        <p className="text-foreground font-medium mb-1">
+                          {info.content}
+                        </p>
+                        <p className="text-sm text-muted-foreground">
+                          {info.description}
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            {/* Additional CTA */}
+            <Card className="mt-8 border-primary/20 bg-gradient-to-br from-primary/5 to-primary/10">
+              <CardContent className="p-6 text-center">
+                <Globe className="w-12 h-12 text-primary mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-foreground mb-2">
+                  Global Reach
+                </h3>
+                <p className="text-muted-foreground text-sm mb-4">
+                  Serving clients worldwide with 24/7 support and local
+                  expertise.
+                </p>
+                <Button
+                  variant="outline"
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                >
+                  View Our Locations
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Contact Form */}
+          <div className="lg:col-span-2">
+            <Card className="border-border bg-card">
+              <CardHeader>
+                <CardTitle className="text-2xl text-foreground">
+                  Send us a Message
+                </CardTitle>
+                <p className="text-muted-foreground">
+                  Fill out the form below and we'll get back to you within 24
+                  hours.
+                </p>
+              </CardHeader>
+              <CardContent>
+                <form className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <label className="block text-sm font-medium text-foreground mb-2">
+                        First Name
+                      </label>
+                      <Input
+                        placeholder="John"
+                        className="border-border bg-background"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-foreground mb-2">
+                        Last Name
+                      </label>
+                      <Input
+                        placeholder="Doe"
+                        className="border-border bg-background"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-foreground mb-2">
+                      Email Address
+                    </label>
+                    <Input
+                      type="email"
+                      placeholder="john@company.com"
+                      className="border-border bg-background"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-foreground mb-2">
+                      Company
+                    </label>
+                    <Input
+                      placeholder="Your Company Name"
+                      className="border-border bg-background"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-foreground mb-2">
+                      Project Type
+                    </label>
+                    <select className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                      <option value="">Select a service</option>
+                      <option value="web-development">Web Development</option>
+                      <option value="mobile-development">
+                        Mobile Development
+                      </option>
+                      <option value="cloud-solutions">Cloud Solutions</option>
+                      <option value="digital-transformation">
+                        Digital Transformation
+                      </option>
+                      <option value="consulting">Consulting</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-foreground mb-2">
+                      Message
+                    </label>
+                    <Textarea
+                      placeholder="Tell us about your project..."
+                      rows={6}
+                      className="border-border bg-background"
+                    />
+                  </div>
+
+                  <Button
+                    type="submit"
+                    size="lg"
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                  >
+                    Send Message
+                    <Send className="ml-2 w-4 h-4" />
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
