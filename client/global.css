@@ -9,82 +9,95 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    --background: 0 0% 100%;
-    --foreground: 224 71% 4%;
+    /* Scalinova Brand Colors */
+    --background: 48 44% 93%; /* Light cream #F5F1E6 */
+    --foreground: 162 100% 11%; /* Dark teal #004238 */
 
     --card: 0 0% 100%;
-    --card-foreground: 224 71% 4%;
+    --card-foreground: 162 100% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 224 71% 4%;
+    --popover-foreground: 162 100% 11%;
 
-    --primary: 262 83% 58%;
-    --primary-foreground: 210 20% 98%;
+    --primary: 162 100% 20%; /* Dark blue-green #00667D */
+    --primary-foreground: 48 44% 93%;
 
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 220 9% 46%;
+    --secondary: 45 67% 56%; /* Gold #D1A940 */
+    --secondary-foreground: 162 100% 11%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 48 35% 88%;
+    --muted-foreground: 162 50% 30%;
 
-    --accent: 220 14% 96%;
-    --accent-foreground: 220 9% 46%;
+    --accent: 79 60% 35%; /* SCALI green #4F7B3E */
+    --accent-foreground: 48 44% 93%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 20% 98%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 262 83% 58%;
+    --border: 48 25% 82%;
+    --input: 48 25% 82%;
+    --ring: 162 100% 20%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Custom Scalinova Colors */
+    --scalinova-gold: 45 67% 56%; /* Crown gold #D1A940 */
+    --scalinova-teal: 162 100% 11%; /* Shield dark teal #004238 */
+    --scalinova-blue: 190 100% 20%; /* Circle blue-green #00667D */
+    --scalinova-green-scali: 79 60% 35%; /* SCALI green #4F7B3E */
+    --scalinova-green-nova: 79 58% 40%; /* NOVA green #6F9333 */
+    --scalinova-lime: 79 58% 50%; /* NOVA lime #A3B631 */
+    --scalinova-yellow: 50 89% 67%; /* NOVA yellow #F0C529 */
+    --scalinova-cream: 48 44% 93%; /* Background cream #F5F1E6 */
+
+    --sidebar-background: 48 44% 95%;
+    --sidebar-foreground: 162 100% 11%;
+    --sidebar-primary: 162 100% 20%;
+    --sidebar-primary-foreground: 48 44% 93%;
+    --sidebar-accent: 48 35% 90%;
+    --sidebar-accent-foreground: 162 100% 11%;
+    --sidebar-border: 48 25% 85%;
+    --sidebar-ring: 162 100% 20%;
   }
 
   .dark {
-    --background: 224 71% 4%;
-    --foreground: 210 20% 98%;
+    /* Dark mode with Scalinova brand colors */
+    --background: 162 100% 8%; /* Dark teal background */
+    --foreground: 48 44% 93%; /* Light cream text */
 
-    --card: 224 71% 4%;
-    --card-foreground: 210 20% 98%;
+    --card: 162 100% 11%;
+    --card-foreground: 48 44% 93%;
 
-    --popover: 224 71% 4%;
-    --popover-foreground: 210 20% 98%;
+    --popover: 162 100% 11%;
+    --popover-foreground: 48 44% 93%;
 
-    --primary: 263 70% 50%;
-    --primary-foreground: 210 20% 98%;
+    --primary: 45 67% 56%; /* Gold primary */
+    --primary-foreground: 162 100% 11%;
 
-    --secondary: 215 27% 17%;
-    --secondary-foreground: 210 20% 98%;
+    --secondary: 162 100% 15%;
+    --secondary-foreground: 48 44% 93%;
 
-    --muted: 215 27% 17%;
-    --muted-foreground: 217 10% 65%;
+    --muted: 162 50% 15%;
+    --muted-foreground: 48 25% 70%;
 
-    --accent: 215 27% 17%;
-    --accent-foreground: 210 20% 98%;
+    --accent: 79 60% 45%;
+    --accent-foreground: 48 44% 93%;
 
     --destructive: 0 62% 30%;
-    --destructive-foreground: 210 20% 98%;
+    --destructive-foreground: 48 44% 93%;
 
-    --border: 215 27% 17%;
-    --input: 215 27% 17%;
-    --ring: 263 70% 50%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 162 50% 20%;
+    --input: 162 50% 20%;
+    --ring: 45 67% 56%;
+
+    --sidebar-background: 162 100% 10%;
+    --sidebar-foreground: 48 44% 93%;
+    --sidebar-primary: 45 67% 56%;
+    --sidebar-primary-foreground: 162 100% 11%;
+    --sidebar-accent: 162 50% 15%;
+    --sidebar-accent-foreground: 48 44% 93%;
+    --sidebar-border: 162 50% 20%;
+    --sidebar-ring: 45 67% 56%;
   }
 }
 
