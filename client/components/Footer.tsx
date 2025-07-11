@@ -54,8 +54,12 @@ export default function Footer() {
                   alt="Scalinova Logo"
                   className="h-10 w-auto"
                 />
-                <span className="text-xl font-bold text-foreground">
-                  Scalinova
+                <span className="text-xl font-bold">
+                  <span className="text-scalinova-green-scali">SCAL</span>
+                  <span className="text-scalinova-gold">I</span>
+                  <span className="bg-gradient-to-r from-scalinova-green-nova to-scalinova-blue bg-clip-text text-transparent">
+                    NOVA
+                  </span>
                 </span>
               </div>
               <p className="text-muted-foreground mb-6 max-w-sm">
