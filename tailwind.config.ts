@@ -57,9 +57,20 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Scalinova Brand Colors
+        scalinova: {
+          gold: "hsl(var(--scalinova-gold))", // Crown gold #D1A940
+          teal: "hsl(var(--scalinova-teal))", // Shield dark teal #004238
+          blue: "hsl(var(--scalinova-blue))", // Circle blue-green #00667D
+          "green-scali": "hsl(var(--scalinova-green-scali))", // SCALI green #4F7B3E
+          "green-nova": "hsl(var(--scalinova-green-nova))", // NOVA green #6F9333
+          lime: "hsl(var(--scalinova-lime))", // NOVA lime #A3B631
+          yellow: "hsl(var(--scalinova-yellow))", // NOVA yellow #F0C529
+          cream: "hsl(var(--scalinova-cream))", // Background cream #F5F1E6
+        },
         gradient: {
-          from: "#667eea",
-          to: "#764ba2",
+          from: "hsl(var(--scalinova-teal))",
+          to: "hsl(var(--scalinova-blue))",
         },
       },
       borderRadius: {
