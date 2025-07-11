@@ -24,6 +24,9 @@ export default function Navigation() {
                 alt="Scalinova Logo"
                 className="h-10 w-auto"
               />
+              <span className="text-xl font-bold text-foreground">
+                Scalinova
+              </span>
             </div>
           </div>
 
