@@ -1,0 +1,129 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Play, CheckCircle } from "lucide-react";
+
+export default function HeroSection() {
+  return (
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background to-muted/20"
+    >
+      {/* Background Elements */}
+      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
+      <div
+        className="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float"
+        style={{ animationDelay: "1s" }}
+      ></div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+        <div className="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
+          {/* Left Content */}
+          <div className="lg:col-span-6 text-center lg:text-left">
+            <div className="flex items-center justify-center lg:justify-start mb-6">
+              <div className="flex items-center space-x-2 bg-primary/10 px-4 py-2 rounded-full">
+                <CheckCircle className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium text-primary">
+                  Trusted by 500+ Companies
+                </span>
+              </div>
+            </div>
+
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 animate-slide-up">
+              Scale Your Business with{" "}
+              <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+                Next-Gen Solutions
+              </span>
+            </h1>
+
+            <p
+              className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0 animate-slide-up"
+              style={{ animationDelay: "0.1s" }}
+            >
+              Transform your business with our cutting-edge technology
+              solutions. We help companies scale efficiently with innovative
+              software, strategic consulting, and digital transformation
+              services.
+            </p>
+
+            <div
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12 animate-slide-up"
+              style={{ animationDelay: "0.2s" }}
+            >
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg"
+              >
+                Get Started Free
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="px-8 py-4 text-lg border-border hover:bg-muted"
+              >
+                <Play className="mr-2 w-5 h-5" />
+                Watch Demo
+              </Button>
+            </div>
+
+            {/* Stats */}
+            <div
+              className="grid grid-cols-3 gap-8 pt-8 border-t border-border animate-slide-up"
+              style={{ animationDelay: "0.3s" }}
+            >
+              <div className="text-center lg:text-left">
+                <div className="text-2xl sm:text-3xl font-bold text-foreground">
+                  500+
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  Happy Clients
+                </div>
+              </div>
+              <div className="text-center lg:text-left">
+                <div className="text-2xl sm:text-3xl font-bold text-foreground">
+                  99.9%
+                </div>
+                <div className="text-sm text-muted-foreground">Uptime</div>
+              </div>
+              <div className="text-center lg:text-left">
+                <div className="text-2xl sm:text-3xl font-bold text-foreground">
+                  24/7
+                </div>
+                <div className="text-sm text-muted-foreground">Support</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Content - Visual */}
+          <div className="lg:col-span-6 mt-12 lg:mt-0">
+            <div
+              className="relative animate-fade-in"
+              style={{ animationDelay: "0.4s" }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent rounded-2xl blur-3xl"></div>
+              <div className="relative bg-card border border-border rounded-2xl p-8 shadow-2xl">
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="h-4 bg-primary/20 rounded w-3/4"></div>
+                    <div className="h-4 bg-muted rounded w-1/2"></div>
+                    <div className="h-4 bg-primary/30 rounded w-5/6"></div>
+                    <div className="h-20 bg-gradient-to-br from-primary/10 to-primary/30 rounded-lg border border-primary/20"></div>
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="h-8 bg-muted rounded"></div>
+                      <div className="h-8 bg-primary/20 rounded"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
