@@ -19,10 +19,10 @@ export default function HeroSection() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
           {/* Left Content */}
           <div className="lg:col-span-6 text-center lg:text-left">
-            <div className="flex items-center justify-center lg:justify-start mb-6">
-              <div className="flex items-center space-x-2 bg-scalinova-gold/20 px-4 py-2 rounded-full">
-                <CheckCircle className="w-4 h-4 text-scalinova-teal" />
-                <span className="text-sm font-medium text-scalinova-teal">
+            <div className="flex items-center justify-center lg:justify-start mb-6 animate-slide-in-left">
+              <div className="flex items-center space-x-2 bg-scalinova-gold/20 px-4 py-2 rounded-full hover-lift hover-glow group cursor-pointer">
+                <CheckCircle className="w-4 h-4 text-scalinova-teal group-hover:animate-wiggle" />
+                <span className="text-sm font-medium text-scalinova-teal group-hover:text-animated-gradient">
                   Trusted by 500+ Companies
                 </span>
               </div>
