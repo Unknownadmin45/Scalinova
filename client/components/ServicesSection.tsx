@@ -133,18 +133,21 @@ export default function ServicesSection() {
                   </CardTitle>
                 </div>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-6">
+              <CardContent className="relative z-10">
+                <p className="text-muted-foreground mb-6 group-hover:text-foreground transition-colors duration-300 text-reveal">
                   {service.description}
                 </p>
                 <div className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <div
                       key={featureIndex}
-                      className="flex items-center space-x-2"
+                      className="flex items-center space-x-2 group/feature hover-slide-bg rounded px-2 py-1 animate-slide-in-left"
+                      style={{
+                        animationDelay: `${index * 0.1 + featureIndex * 0.05}s`,
+                      }}
                     >
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                      <span className="text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 bg-scalinova-gold rounded-full animate-pulse-glow group-hover/feature:animate-wiggle"></div>
+                      <span className="text-sm text-muted-foreground group-hover/feature:text-scalinova-teal transition-colors duration-300">
                         {feature}
                       </span>
                     </div>
