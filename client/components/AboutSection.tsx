@@ -160,12 +160,12 @@ export default function AboutSection() {
             {values.map((value, index) => (
               <Card
                 key={index}
-                className="border-border bg-card hover:shadow-lg transition-shadow duration-300"
+                className="border-scalinova-gold/30 bg-card hover:shadow-lg transition-shadow duration-300"
               >
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      <CheckCircle className="w-5 h-5 text-primary" />
+                    <div className="p-2 bg-scalinova-teal/10 rounded-lg">
+                      <CheckCircle className="w-5 h-5 text-scalinova-teal" />
                     </div>
                     <div>
                       <h4 className="text-lg font-semibold text-foreground mb-2">
