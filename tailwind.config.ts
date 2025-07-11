@@ -102,6 +102,18 @@ export default {
         "fade-in": "fadeIn 0.6s ease-in-out",
         "slide-up": "slideUp 0.6s ease-out",
         float: "float 3s ease-in-out infinite",
+        "bounce-slow": "bounceSlow 4s ease-in-out infinite",
+        "pulse-glow": "pulseGlow 2s ease-in-out infinite",
+        "rotate-3d": "rotate3d 10s linear infinite",
+        "slide-in-left": "slideInLeft 0.8s ease-out",
+        "slide-in-right": "slideInRight 0.8s ease-out",
+        "scale-in": "scaleIn 0.5s ease-out",
+        flip: "flip 0.6s ease-in-out",
+        wiggle: "wiggle 1s ease-in-out infinite",
+        "gradient-shift": "gradientShift 8s ease infinite",
+        "border-morph": "borderMorph 4s ease infinite",
+        "text-glow": "textGlow 2s ease-in-out infinite alternate",
+        "card-hover": "cardHover 0.3s ease",
       },
       keyframes: {
         fadeIn: {
@@ -115,6 +127,77 @@ export default {
         float: {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-10px)" },
+        },
+        bounceSlow: {
+          "0%, 20%, 50%, 80%, 100%": { transform: "translateY(0)" },
+          "40%": { transform: "translateY(-10px)" },
+          "60%": { transform: "translateY(-5px)" },
+        },
+        pulseGlow: {
+          "0%, 100%": {
+            boxShadow: "0 0 5px hsl(var(--scalinova-gold) / 0.5)",
+          },
+          "50%": {
+            boxShadow:
+              "0 0 20px hsl(var(--scalinova-gold) / 0.8), 0 0 30px hsl(var(--scalinova-blue) / 0.6)",
+          },
+        },
+        rotate3d: {
+          "0%": { transform: "rotateY(0deg) rotateX(0deg)" },
+          "25%": { transform: "rotateY(90deg) rotateX(0deg)" },
+          "50%": { transform: "rotateY(180deg) rotateX(180deg)" },
+          "75%": { transform: "rotateY(270deg) rotateX(180deg)" },
+          "100%": { transform: "rotateY(360deg) rotateX(360deg)" },
+        },
+        slideInLeft: {
+          "0%": { transform: "translateX(-100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        slideInRight: {
+          "0%": { transform: "translateX(100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        scaleIn: {
+          "0%": { transform: "scale(0.8)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
+        flip: {
+          "0%": { transform: "rotateY(0)" },
+          "50%": { transform: "rotateY(-90deg)" },
+          "100%": { transform: "rotateY(0)" },
+        },
+        wiggle: {
+          "0%, 7%": { transform: "rotateZ(0)" },
+          "15%": { transform: "rotateZ(-15deg)" },
+          "20%": { transform: "rotateZ(10deg)" },
+          "25%": { transform: "rotateZ(-10deg)" },
+          "30%": { transform: "rotateZ(6deg)" },
+          "35%": { transform: "rotateZ(-4deg)" },
+          "40%, 100%": { transform: "rotateZ(0)" },
+        },
+        gradientShift: {
+          "0%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+          "100%": { backgroundPosition: "0% 50%" },
+        },
+        borderMorph: {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+        },
+        textGlow: {
+          from: { textShadow: "0 0 10px hsl(var(--scalinova-gold) / 0.8)" },
+          to: {
+            textShadow:
+              "0 0 20px hsl(var(--scalinova-gold) / 0.8), 0 0 30px hsl(var(--scalinova-blue) / 0.6)",
+          },
+        },
+        cardHover: {
+          "0%": {
+            transform: "perspective(1000px) rotateX(0deg) rotateY(0deg)",
+          },
+          "100%": {
+            transform: "perspective(1000px) rotateX(10deg) rotateY(10deg)",
+          },
         },
       },
     },
