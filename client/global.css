@@ -97,3 +97,28 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-image: radial-gradient(
+      circle,
+      hsl(var(--muted-foreground) / 0.15) 1px,
+      transparent 1px
+    );
+    background-size: 20px 20px;
+  }
+}
+
+@layer components {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+}
