@@ -18,15 +18,12 @@ export default function Navigation() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary/80 rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">
-                  S
-                </span>
-              </div>
-              <span className="text-xl font-bold text-foreground">
-                Scalinova
-              </span>
+            <div className="flex items-center space-x-3">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F002b0baeac61412f826a94580e123c13%2Fdf0da07cd0ac456db54fcdcc2a692583?format=webp&width=100"
+                alt="Scalinova Logo"
+                className="h-10 w-auto"
+              />
             </div>
           </div>
 
