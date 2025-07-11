@@ -155,10 +155,10 @@ export default function ServicesSection() {
 
         {/* CTA */}
         <div className="text-center">
-          <div className="bg-card border border-border rounded-2xl p-8 lg:p-12 max-w-4xl mx-auto">
+          <div className="bg-card border border-scalinova-gold/30 rounded-2xl p-8 lg:p-12 max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-6">
               <Cog
-                className="w-12 h-12 text-primary animate-spin"
+                className="w-12 h-12 text-scalinova-teal animate-spin"
                 style={{ animationDuration: "3s" }}
               />
             </div>
@@ -171,7 +171,7 @@ export default function ServicesSection() {
             </p>
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4"
+              className="bg-scalinova-teal hover:bg-scalinova-blue text-scalinova-cream px-8 py-4 font-semibold"
             >
               Schedule Free Consultation
               <ArrowRight className="ml-2 w-5 h-5" />
