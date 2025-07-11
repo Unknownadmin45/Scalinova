@@ -46,16 +46,16 @@ export default function ContactSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-4">
-            <div className="flex items-center space-x-2 bg-primary/10 px-4 py-2 rounded-full">
-              <MessageCircle className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-primary">
+            <div className="flex items-center space-x-2 bg-scalinova-gold/20 px-4 py-2 rounded-full">
+              <MessageCircle className="w-4 h-4 text-scalinova-teal" />
+              <span className="text-sm font-medium text-scalinova-teal">
                 Get In Touch
               </span>
             </div>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Ready to Start Your{" "}
-            <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-scalinova-teal via-scalinova-blue to-scalinova-green-nova bg-clip-text text-transparent">
               Digital Journey?
             </span>
           </h2>
@@ -73,11 +73,11 @@ export default function ContactSection() {
               {contactInfo.map((info, index) => (
                 <Card
                   key={index}
-                  className="border-border bg-card hover:shadow-lg transition-shadow duration-300"
+                  className="border-scalinova-gold/30 bg-card hover:shadow-lg transition-shadow duration-300"
                 >
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="p-3 bg-primary/10 rounded-lg text-primary">
+                      <div className="p-3 bg-scalinova-teal/10 rounded-lg text-scalinova-teal">
                         {info.icon}
                       </div>
                       <div>
@@ -98,9 +98,9 @@ export default function ContactSection() {
             </div>
 
             {/* Additional CTA */}
-            <Card className="mt-8 border-primary/20 bg-gradient-to-br from-primary/5 to-primary/10">
+            <Card className="mt-8 border-scalinova-gold/30 bg-gradient-to-br from-scalinova-gold/10 to-scalinova-blue/10">
               <CardContent className="p-6 text-center">
-                <Globe className="w-12 h-12 text-primary mx-auto mb-4" />
+                <Globe className="w-12 h-12 text-scalinova-teal mx-auto mb-4" />
                 <h3 className="text-lg font-semibold text-foreground mb-2">
                   Global Reach
                 </h3>
@@ -110,7 +110,7 @@ export default function ContactSection() {
                 </p>
                 <Button
                   variant="outline"
-                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                  className="border-scalinova-teal text-scalinova-teal hover:bg-scalinova-teal hover:text-scalinova-cream font-semibold"
                 >
                   View Our Locations
                 </Button>
@@ -120,7 +120,7 @@ export default function ContactSection() {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <Card className="border-border bg-card">
+            <Card className="border-scalinova-gold/30 bg-card">
               <CardHeader>
                 <CardTitle className="text-2xl text-foreground">
                   Send us a Message
@@ -207,7 +207,7 @@ export default function ContactSection() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                    className="w-full bg-scalinova-teal hover:bg-scalinova-blue text-scalinova-cream font-semibold"
                   >
                     Send Message
                     <Send className="ml-2 w-4 h-4" />
