@@ -9,9 +9,9 @@ export default function HeroSection() {
     >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute top-20 left-10 w-72 h-72 bg-scalinova-gold/20 rounded-full blur-3xl animate-float"></div>
       <div
-        className="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float"
+        className="absolute bottom-20 right-10 w-96 h-96 bg-scalinova-blue/10 rounded-full blur-3xl animate-float"
         style={{ animationDelay: "1s" }}
       ></div>
 
@@ -20,9 +20,9 @@ export default function HeroSection() {
           {/* Left Content */}
           <div className="lg:col-span-6 text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start mb-6">
-              <div className="flex items-center space-x-2 bg-primary/10 px-4 py-2 rounded-full">
-                <CheckCircle className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-primary">
+              <div className="flex items-center space-x-2 bg-scalinova-gold/20 px-4 py-2 rounded-full">
+                <CheckCircle className="w-4 h-4 text-scalinova-teal" />
+                <span className="text-sm font-medium text-scalinova-teal">
                   Trusted by 500+ Companies
                 </span>
               </div>
@@ -30,7 +30,7 @@ export default function HeroSection() {
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 animate-slide-up">
               Scale Your Business with{" "}
-              <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-scalinova-teal via-scalinova-blue to-scalinova-green-nova bg-clip-text text-transparent">
                 Next-Gen Solutions
               </span>
             </h1>
@@ -51,7 +51,7 @@ export default function HeroSection() {
             >
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg"
+                className="bg-scalinova-teal hover:bg-scalinova-blue text-scalinova-cream px-8 py-4 text-lg font-semibold"
               >
                 Get Started Free
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -59,7 +59,7 @@ export default function HeroSection() {
               <Button
                 variant="outline"
                 size="lg"
-                className="px-8 py-4 text-lg border-border hover:bg-muted"
+                className="px-8 py-4 text-lg border-scalinova-teal text-scalinova-teal hover:bg-scalinova-teal hover:text-scalinova-cream font-semibold"
               >
                 <Play className="mr-2 w-5 h-5" />
                 Watch Demo
@@ -100,22 +100,22 @@ export default function HeroSection() {
               className="relative animate-fade-in"
               style={{ animationDelay: "0.4s" }}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent rounded-2xl blur-3xl"></div>
-              <div className="relative bg-card border border-border rounded-2xl p-8 shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-scalinova-gold/30 to-scalinova-blue/20 rounded-2xl blur-3xl"></div>
+              <div className="relative bg-card border border-scalinova-gold/30 rounded-2xl p-8 shadow-2xl">
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                    <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-scalinova-yellow rounded-full"></div>
+                    <div className="w-3 h-3 bg-scalinova-green-nova rounded-full"></div>
                   </div>
                   <div className="space-y-3">
-                    <div className="h-4 bg-primary/20 rounded w-3/4"></div>
-                    <div className="h-4 bg-muted rounded w-1/2"></div>
-                    <div className="h-4 bg-primary/30 rounded w-5/6"></div>
-                    <div className="h-20 bg-gradient-to-br from-primary/10 to-primary/30 rounded-lg border border-primary/20"></div>
+                    <div className="h-4 bg-scalinova-teal/30 rounded w-3/4"></div>
+                    <div className="h-4 bg-scalinova-gold/20 rounded w-1/2"></div>
+                    <div className="h-4 bg-scalinova-blue/40 rounded w-5/6"></div>
+                    <div className="h-20 bg-gradient-to-br from-scalinova-teal/10 to-scalinova-blue/20 rounded-lg border border-scalinova-gold/30"></div>
                     <div className="grid grid-cols-2 gap-3">
-                      <div className="h-8 bg-muted rounded"></div>
-                      <div className="h-8 bg-primary/20 rounded"></div>
+                      <div className="h-8 bg-scalinova-gold/20 rounded"></div>
+                      <div className="h-8 bg-scalinova-green-scali/30 rounded"></div>
                     </div>
                   </div>
                 </div>
