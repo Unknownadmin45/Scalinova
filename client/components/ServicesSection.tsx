@@ -119,14 +119,16 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="group hover:shadow-xl transition-all duration-300 border-border bg-card hover:bg-card/80 hover:-translate-y-1"
+              className="group hover:shadow-xl transition-all duration-500 border-scalinova-gold/30 bg-card hover:bg-scalinova-cream/50 hover-lift hover-glow card-3d perspective-1000 relative overflow-hidden animate-slide-up"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <CardHeader>
+              <div className="absolute inset-0 bg-gradient-to-br from-scalinova-gold/5 to-scalinova-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardHeader className="relative z-10">
                 <div className="flex items-center space-x-3 mb-4">
-                  <div className="p-2 bg-primary/10 rounded-lg text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                  <div className="p-2 bg-scalinova-teal/10 rounded-lg text-scalinova-teal group-hover:bg-scalinova-teal group-hover:text-scalinova-cream transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
                     {service.icon}
                   </div>
-                  <CardTitle className="text-xl text-foreground">
+                  <CardTitle className="text-xl text-foreground group-hover:text-animated-gradient transition-all duration-300">
                     {service.title}
                   </CardTitle>
                 </div>
