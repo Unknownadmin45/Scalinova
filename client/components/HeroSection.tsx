@@ -51,18 +51,23 @@ export default function HeroSection() {
             >
               <Button
                 size="lg"
-                className="bg-scalinova-teal hover:bg-scalinova-blue text-scalinova-cream px-8 py-4 text-lg font-semibold"
+                className="bg-scalinova-teal hover:bg-scalinova-blue text-scalinova-cream px-8 py-4 text-lg font-semibold hover-lift hover-glow group relative overflow-hidden transform transition-all duration-300 hover:scale-105"
               >
-                Get Started Free
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <span className="relative z-10 flex items-center">
+                  Get Started Free
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                </span>
+                <span className="absolute inset-0 bg-gradient-to-r from-scalinova-gold to-scalinova-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
               </Button>
               <Button
                 variant="outline"
                 size="lg"
-                className="px-8 py-4 text-lg border-scalinova-teal text-scalinova-teal hover:bg-scalinova-teal hover:text-scalinova-cream font-semibold"
+                className="px-8 py-4 text-lg border-scalinova-teal text-scalinova-teal hover:bg-scalinova-teal hover:text-scalinova-cream font-semibold hover-lift group morphing-border relative overflow-hidden"
               >
-                <Play className="mr-2 w-5 h-5" />
-                Watch Demo
+                <span className="relative z-10 flex items-center">
+                  <Play className="mr-2 w-5 h-5 group-hover:animate-pulse-glow" />
+                  Watch Demo
+                </span>
               </Button>
             </div>
 
