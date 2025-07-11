@@ -48,15 +48,12 @@ export default function Footer() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             {/* Brand Section */}
             <div className="lg:col-span-4 mb-12 lg:mb-0">
-              <div className="flex items-center space-x-2 mb-6">
-                <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary/80 rounded-lg flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-lg">
-                    S
-                  </span>
-                </div>
-                <span className="text-xl font-bold text-foreground">
-                  Scalinova
-                </span>
+              <div className="flex items-center space-x-3 mb-6">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F002b0baeac61412f826a94580e123c13%2Fdf0da07cd0ac456db54fcdcc2a692583?format=webp&width=100"
+                  alt="Scalinova Logo"
+                  className="h-10 w-auto"
+                />
               </div>
               <p className="text-muted-foreground mb-6 max-w-sm">
                 Empowering businesses through innovative technology solutions.
@@ -65,19 +62,19 @@ export default function Footer() {
               </p>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
-                  <Mail className="w-4 h-4 text-primary" />
+                  <Mail className="w-4 h-4 text-scalinova-gold" />
                   <span className="text-muted-foreground">
                     hello@scalinova.com
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Phone className="w-4 h-4 text-primary" />
+                  <Phone className="w-4 h-4 text-scalinova-gold" />
                   <span className="text-muted-foreground">
                     +1 (555) 123-4567
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <MapPin className="w-4 h-4 text-primary" />
+                  <MapPin className="w-4 h-4 text-scalinova-gold" />
                   <span className="text-muted-foreground">
                     San Francisco, CA
                   </span>
@@ -129,7 +126,7 @@ export default function Footer() {
                   placeholder="Enter your email"
                   className="flex-1 px-4 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                 />
-                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Button className="bg-scalinova-teal hover:bg-scalinova-blue text-scalinova-cream font-semibold">
                   Subscribe
                 </Button>
               </div>
