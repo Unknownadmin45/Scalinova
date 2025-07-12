@@ -11,16 +11,16 @@ export default function HeroSection() {
   const titlePhases = [
     {
       text: "Scale Your Business with ",
-      className: "animate-fade-in",
-      speed: 80,
-      delay: 500,
+      className: "text-foreground",
+      speed: 75,
+      delay: 800,
     },
     {
       text: "Next-Gen Solutions",
       className:
         "bg-gradient-to-r from-scalinova-teal via-scalinova-blue to-scalinova-green-nova bg-clip-text text-transparent text-animated-gradient hover-tilt inline-block",
-      speed: 100,
-      delay: 200,
+      speed: 90,
+      delay: 300,
     },
   ];
 
