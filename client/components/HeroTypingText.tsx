@@ -93,8 +93,8 @@ export default function HeroTypingText({
         </span>
       ))}
 
-      {/* Render current phase */}
-      {activePhase && (
+      {/* Render current phase only if it's not completed yet */}
+      {activePhase && currentIndex < activePhase.text.length && (
         <span className={activePhase.className || ""}>
           {displayedText}
           {isTyping && (
