@@ -98,29 +98,20 @@ export default function HeroTypingText({
         </span>
       ))}
 
-      {/* Render current phase */}
-      {activePhase && currentPhase < phases.length && (
-        <span className={activePhase.className || ""}>
-          {displayedText}
-          {isTyping && currentIndex < activePhase.text.length && (
-            <span
-              className={`inline-block w-0.5 h-[1em] bg-current ml-1 ${
-                showCursor ? "opacity-100" : "opacity-0"
-              } transition-opacity duration-100`}
-            />
-          )}
-        </span>
-      )}
-
-      {/* Final cursor after all phases complete */}
-      {currentPhase >= phases.length - 1 &&
-        activePhase &&
-        currentIndex >= activePhase.text.length && (
-          <span
-            className={`inline-block w-0.5 h-[1em] bg-current ml-1 ${
-              showCursor ? "opacity-100" : "opacity-0"
-            } transition-opacity duration-100`}
-          />
+      {/* Render current phase only if it's not completed yet */}
+      {activePhase &&
+        currentPhase < phases.length &&
+        currentIndex < activePhase.text.length && (
+          <span className={activePhase.className || ""}>
+            {displayedText}
+            {isTyping && (
+              <span
+                className={`inline-block w-0.5 h-[1em] bg-current ml-1 ${
+                  showCursor ? "opacity-100" : "opacity-0"
+                } transition-opacity duration-100`}
+              />
+            )}
+          </span>
         )}
     </span>
   );
