@@ -52,7 +52,7 @@ export default function Navigation() {
                 <span className="absolute inset-0 bg-scalinova-gold/10 rounded-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
               </a>
             ))}
-            <Button className="bg-scalinova-teal hover:bg-scalinova-blue text-scalinova-cream font-semibold relative overflow-hidden group hover-glow transition-all duration-300 hover:scale-105 animate-bounce-slow">
+            <Button className="bg-scalinova-teal hover:bg-scalinova-blue text-scalinova-cream font-semibold relative overflow-hidden group hover-glow transition-all duration-300 hover:scale-105">
               <span className="relative z-10">Get Started</span>
               <span className="absolute inset-0 bg-gradient-to-r from-scalinova-gold to-scalinova-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
             </Button>
