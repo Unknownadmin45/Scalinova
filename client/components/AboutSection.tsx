@@ -88,18 +88,23 @@ export default function AboutSection() {
           {stats.map((stat, index) => (
             <Card
               key={index}
-              className="text-center p-6 border-border bg-card hover:shadow-lg transition-shadow duration-300"
+              className="text-center p-6 border-scalinova-gold/30 bg-card hover:shadow-lg transition-all duration-500 hover-lift hover-glow group animate-scale-in cursor-pointer"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-0">
                 <div className="flex justify-center mb-4">
-                  <div className="p-3 bg-primary/10 rounded-lg text-primary">
+                  <div className="p-3 bg-scalinova-teal/10 rounded-lg text-scalinova-teal group-hover:animate-bounce-slow group-hover:bg-scalinova-teal group-hover:text-scalinova-cream transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
                     {stat.icon}
                   </div>
                 </div>
-                <div className="text-2xl lg:text-3xl font-bold text-foreground mb-2">
-                  {stat.number}
+                <div className="text-2xl lg:text-3xl font-bold text-foreground mb-2 group-hover:text-animated-gradient transition-all duration-300">
+                  <AnimatedCounter
+                    end={stat.number}
+                    suffix={stat.suffix}
+                    duration={2000 + index * 200}
+                  />
                 </div>
-                <div className="text-sm text-muted-foreground">
+                <div className="text-sm text-muted-foreground group-hover:text-scalinova-teal transition-colors duration-300">
                   {stat.label}
                 </div>
               </CardContent>
