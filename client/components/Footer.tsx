@@ -48,16 +48,20 @@ export default function Footer() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             {/* Brand Section */}
             <div className="lg:col-span-4 mb-12 lg:mb-0">
-              <div className="flex items-center space-x-3 mb-6">
+              <div className="flex items-center space-x-3 mb-6 hover-lift group cursor-pointer">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F002b0baeac61412f826a94580e123c13%2Fdf0da07cd0ac456db54fcdcc2a692583?format=webp&width=100"
                   alt="Scalinova Logo"
-                  className="h-10 w-auto"
+                  className="h-10 w-auto transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110"
                 />
-                <span className="text-xl font-bold">
-                  <span className="text-scalinova-green-scali">SCAL</span>
-                  <span className="text-scalinova-gold">I</span>
-                  <span className="bg-gradient-to-r from-scalinova-green-nova to-scalinova-blue bg-clip-text text-transparent">
+                <span className="text-xl font-bold animate-fade-in">
+                  <span className="text-scalinova-green-scali hover:animate-pulse-glow transition-all duration-300 cursor-pointer">
+                    SCAL
+                  </span>
+                  <span className="text-scalinova-gold hover:animate-wiggle transition-all duration-300 cursor-pointer">
+                    I
+                  </span>
+                  <span className="bg-gradient-to-r from-scalinova-green-nova to-scalinova-blue bg-clip-text text-transparent hover:text-animated-gradient transition-all duration-300 cursor-pointer">
                     NOVA
                   </span>
                 </span>
