@@ -131,9 +131,12 @@ export default function AboutSection() {
               are not only technically excellent but also practical, scalable,
               and aligned with your business objectives.
             </p>
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              Learn More About Us
-              <ArrowRight className="ml-2 w-4 h-4" />
+            <Button className="bg-scalinova-teal hover:bg-scalinova-blue text-scalinova-cream px-8 py-4 font-semibold hover-lift hover-glow group relative overflow-hidden transform transition-all duration-300 hover:scale-105">
+              <span className="relative z-10 flex items-center">
+                Learn More About Us
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+              </span>
+              <span className="absolute inset-0 bg-gradient-to-r from-scalinova-gold to-scalinova-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
             </Button>
           </div>
 
