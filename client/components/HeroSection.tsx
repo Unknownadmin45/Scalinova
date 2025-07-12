@@ -61,9 +61,10 @@ export default function HeroSection() {
               {showParagraph && (
                 <TypingAnimation
                   text="Transform your business with our cutting-edge technology solutions. We help companies scale efficiently with innovative software, strategic consulting, and digital transformation services."
-                  speed={30}
-                  delay={500}
+                  speed={25}
+                  delay={400}
                   className="leading-relaxed"
+                  showCursor={false}
                 />
               )}
             </div>
