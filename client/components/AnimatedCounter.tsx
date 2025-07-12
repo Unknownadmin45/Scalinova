@@ -66,7 +66,7 @@ export default function AnimatedCounter({
   }, [hasStarted, end, duration]);
 
   return (
-    <span id={`counter-${end}`} className={className}>
+    <span ref={elementRef} className={className}>
       {count}
       {suffix}
     </span>
