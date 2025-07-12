@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 interface AnimatedCounterProps {
   end: number;
@@ -15,6 +15,7 @@ export default function AnimatedCounter({
 }: AnimatedCounterProps) {
   const [count, setCount] = useState(0);
   const [hasStarted, setHasStarted] = useState(false);
+  const elementRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
     // Use Intersection Observer to start animation when component comes into view
@@ -29,7 +30,7 @@ export default function AnimatedCounter({
       { threshold: 0.5 },
     );
 
-    const element = document.getElementById(`counter-${end}`);
+    const element = elementRef.current;
     if (element) {
       observer.observe(element);
     }
@@ -39,7 +40,7 @@ export default function AnimatedCounter({
         observer.unobserve(element);
       }
     };
-  }, [end, hasStarted]);
+  }, [hasStarted]);
 
   useEffect(() => {
     if (!hasStarted) return;
