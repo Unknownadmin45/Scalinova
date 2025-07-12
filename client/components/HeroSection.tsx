@@ -57,15 +57,16 @@ export default function HeroSection() {
               />
             </h1>
 
-            <p
-              className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0 animate-slide-up"
-              style={{ animationDelay: "0.1s" }}
-            >
-              Transform your business with our cutting-edge technology
-              solutions. We help companies scale efficiently with innovative
-              software, strategic consulting, and digital transformation
-              services.
-            </p>
+            <div className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0 text-reveal hover:text-foreground transition-colors duration-500 min-h-[4em]">
+              {showParagraph && (
+                <TypingAnimation
+                  text="Transform your business with our cutting-edge technology solutions. We help companies scale efficiently with innovative software, strategic consulting, and digital transformation services."
+                  speed={30}
+                  delay={500}
+                  className="leading-relaxed"
+                />
+              )}
+            </div>
 
             <div
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12 animate-slide-up"
