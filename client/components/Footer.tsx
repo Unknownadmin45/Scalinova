@@ -66,7 +66,7 @@ export default function Footer() {
                   </span>
                 </span>
               </div>
-              <p className="text-muted-foreground mb-6 max-w-sm">
+              <p className="text-muted-foreground mb-6 max-w-sm text-reveal hover:text-foreground transition-colors duration-500">
                 Empowering businesses through innovative technology solutions.
                 We help companies scale efficiently with cutting-edge software
                 and strategic consulting.
