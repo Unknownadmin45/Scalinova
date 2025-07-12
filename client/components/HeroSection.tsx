@@ -77,25 +77,29 @@ export default function HeroSection() {
               className="grid grid-cols-3 gap-8 pt-8 border-t border-border animate-slide-up"
               style={{ animationDelay: "0.3s" }}
             >
-              <div className="text-center lg:text-left">
-                <div className="text-2xl sm:text-3xl font-bold text-foreground">
-                  500+
+              <div className="text-center lg:text-left hover-lift group cursor-pointer">
+                <div className="text-2xl sm:text-3xl font-bold text-foreground group-hover:text-animated-gradient animate-scale-in">
+                  <AnimatedCounter end={500} suffix="+" duration={2000} />
                 </div>
-                <div className="text-sm text-muted-foreground">
+                <div className="text-sm text-muted-foreground group-hover:text-scalinova-teal transition-colors duration-300">
                   Happy Clients
                 </div>
               </div>
-              <div className="text-center lg:text-left">
-                <div className="text-2xl sm:text-3xl font-bold text-foreground">
-                  99.9%
+              <div className="text-center lg:text-left hover-lift group cursor-pointer">
+                <div className="text-2xl sm:text-3xl font-bold text-foreground group-hover:text-animated-gradient animate-scale-in">
+                  <AnimatedCounter end={99.9} suffix="%" duration={2200} />
                 </div>
-                <div className="text-sm text-muted-foreground">Uptime</div>
+                <div className="text-sm text-muted-foreground group-hover:text-scalinova-blue transition-colors duration-300">
+                  Uptime
+                </div>
               </div>
-              <div className="text-center lg:text-left">
-                <div className="text-2xl sm:text-3xl font-bold text-foreground">
+              <div className="text-center lg:text-left hover-lift group cursor-pointer">
+                <div className="text-2xl sm:text-3xl font-bold text-foreground group-hover:text-animated-gradient animate-scale-in">
                   24/7
                 </div>
-                <div className="text-sm text-muted-foreground">Support</div>
+                <div className="text-sm text-muted-foreground group-hover:text-scalinova-gold transition-colors duration-300">
+                  Support
+                </div>
               </div>
             </div>
           </div>
