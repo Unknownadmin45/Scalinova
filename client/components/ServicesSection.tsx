@@ -162,10 +162,7 @@ export default function ServicesSection() {
         <div className="text-center">
           <div className="bg-card border border-scalinova-gold/30 rounded-2xl p-8 lg:p-12 max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-6">
-              <Cog
-                className="w-12 h-12 text-scalinova-teal animate-spin"
-                style={{ animationDuration: "3s" }}
-              />
+              <Cog className="w-12 h-12 text-scalinova-teal group-hover:animate-spin transition-all duration-300" />
             </div>
             <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">
               Ready to Transform Your Business?
