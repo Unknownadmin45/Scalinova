@@ -38,8 +38,8 @@ export default function HeroTypingText({
   useEffect(() => {
     if (!activePhase || !isTyping || currentIndex >= activePhase.text.length) {
       if (activePhase && currentIndex >= activePhase.text.length) {
-        // Phase complete
-        setCompletedPhases((prev) => [...prev, displayedText]);
+        // Phase complete - add to completed phases and immediately move to next
+        setCompletedPhases((prev) => [...prev, activePhase.text]);
 
         if (currentPhase < phases.length - 1) {
           // Move to next phase
