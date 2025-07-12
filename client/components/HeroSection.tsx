@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play, CheckCircle } from "lucide-react";
 import AnimatedCounter from "./AnimatedCounter";
+import TypingAnimation from "./TypingAnimation";
+import HeroTypingText from "./HeroTypingText";
 
 export default function HeroSection() {
   return (
