@@ -41,8 +41,18 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-20 lg:py-32 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      id="about"
+      className="py-20 lg:py-32 bg-background relative overflow-hidden"
+    >
+      {/* Background Animation Elements */}
+      <div className="absolute top-20 right-10 w-64 h-64 bg-scalinova-gold/10 rounded-full blur-3xl animate-float"></div>
+      <div
+        className="absolute bottom-20 left-10 w-48 h-48 bg-scalinova-blue/15 rounded-full blur-2xl animate-pulse-glow"
+        style={{ animationDelay: "1s" }}
+      ></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-4">
