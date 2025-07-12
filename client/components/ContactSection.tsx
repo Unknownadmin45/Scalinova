@@ -47,7 +47,7 @@ export default function ContactSection() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 px-4 py-2">
           <div className="flex items-center justify-center mb-4">
             <div className="flex items-center space-x-2 bg-scalinova-gold/20 px-4 py-2 rounded-full hover-lift hover-glow group cursor-pointer">
               <MessageCircle className="w-4 h-4 text-scalinova-teal group-hover:animate-wiggle" />
