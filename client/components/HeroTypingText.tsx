@@ -93,11 +93,11 @@ export default function HeroTypingText({
         </span>
       ))}
 
-      {/* Render current phase only if it's not completed yet */}
-      {activePhase && currentIndex < activePhase.text.length && (
+      {/* Render current phase */}
+      {activePhase && currentPhase < phases.length && (
         <span className={activePhase.className || ""}>
           {displayedText}
-          {isTyping && (
+          {isTyping && currentIndex < activePhase.text.length && (
             <span
               className={`inline-block w-0.5 h-[1em] bg-current ml-1 ${
                 showCursor ? "opacity-100" : "opacity-0"
