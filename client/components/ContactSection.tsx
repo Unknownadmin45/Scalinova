@@ -56,9 +56,9 @@ export default function ContactSection() {
               </span>
             </div>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 animate-slide-up leading-tight">
-            <span className="block">Ready to Start Your</span>
-            <span className="block bg-gradient-to-r from-scalinova-teal via-scalinova-blue to-scalinova-green-nova bg-clip-text text-transparent text-animated-gradient hover-tilt">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-8 animate-slide-up leading-relaxed">
+            <span className="block pb-2">Ready to Start Your</span>
+            <span className="block bg-gradient-to-r from-scalinova-teal via-scalinova-blue to-scalinova-green-nova bg-clip-text text-transparent text-animated-gradient hover-tilt pb-2">
               Digital Journey?
             </span>
           </h2>
