@@ -158,6 +158,10 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* Ensure descenders are not clipped */
+    line-height: 1.2;
+    padding-bottom: 0.1em;
+    display: inline-block;
   }
 }
 
