@@ -41,21 +41,24 @@ export default function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-20 lg:py-32 bg-muted/20">
+    <section
+      id="contact"
+      className="py-20 lg:py-32 bg-muted/20 relative overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-4">
-            <div className="flex items-center space-x-2 bg-scalinova-gold/20 px-4 py-2 rounded-full">
-              <MessageCircle className="w-4 h-4 text-scalinova-teal" />
-              <span className="text-sm font-medium text-scalinova-teal">
+            <div className="flex items-center space-x-2 bg-scalinova-gold/20 px-4 py-2 rounded-full hover-lift hover-glow group animate-bounce-slow cursor-pointer">
+              <MessageCircle className="w-4 h-4 text-scalinova-teal group-hover:animate-wiggle" />
+              <span className="text-sm font-medium text-scalinova-teal group-hover:text-animated-gradient">
                 Get In Touch
               </span>
             </div>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 animate-slide-up">
             Ready to Start Your{" "}
-            <span className="bg-gradient-to-r from-scalinova-teal via-scalinova-blue to-scalinova-green-nova bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-scalinova-teal via-scalinova-blue to-scalinova-green-nova bg-clip-text text-transparent text-animated-gradient hover-tilt inline-block">
               Digital Journey?
             </span>
           </h2>
@@ -73,21 +76,22 @@ export default function ContactSection() {
               {contactInfo.map((info, index) => (
                 <Card
                   key={index}
-                  className="border-scalinova-gold/30 bg-card hover:shadow-lg transition-shadow duration-300"
+                  className="border-scalinova-gold/30 bg-card hover:shadow-lg transition-all duration-500 hover-lift hover-glow animate-slide-in-left"
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="p-3 bg-scalinova-teal/10 rounded-lg text-scalinova-teal">
+                      <div className="p-3 bg-scalinova-teal/10 rounded-lg text-scalinova-teal group-hover:bg-scalinova-teal group-hover:text-scalinova-cream transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
                         {info.icon}
                       </div>
                       <div>
-                        <h3 className="font-semibold text-foreground mb-1">
+                        <h3 className="font-semibold text-foreground mb-1 group-hover:text-scalinova-teal transition-colors duration-300">
                           {info.title}
                         </h3>
-                        <p className="text-foreground font-medium mb-1">
+                        <p className="text-foreground font-medium mb-1 group-hover:text-animated-gradient transition-all duration-300">
                           {info.content}
                         </p>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300">
                           {info.description}
                         </p>
                       </div>
@@ -120,17 +124,18 @@ export default function ContactSection() {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <Card className="border-scalinova-gold/30 bg-card">
-              <CardHeader>
-                <CardTitle className="text-2xl text-foreground">
+            <Card className="border-scalinova-gold/30 bg-card hover-glow animate-slide-in-right relative overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-br from-scalinova-gold/5 to-scalinova-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardHeader className="relative z-10">
+                <CardTitle className="text-2xl text-foreground group-hover:text-animated-gradient transition-all duration-300">
                   Send us a Message
                 </CardTitle>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">
                   Fill out the form below and we'll get back to you within 24
                   hours.
                 </p>
               </CardHeader>
-              <CardContent>
+              <CardContent className="relative z-10">
                 <form className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
@@ -139,7 +144,7 @@ export default function ContactSection() {
                       </label>
                       <Input
                         placeholder="John"
-                        className="border-border bg-background"
+                        className="border-border bg-background hover:border-scalinova-gold focus:border-scalinova-teal transition-colors duration-300"
                       />
                     </div>
                     <div>
