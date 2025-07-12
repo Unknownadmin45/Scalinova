@@ -8,6 +8,7 @@ import {
   CheckCircle,
   TrendingUp,
 } from "lucide-react";
+import AnimatedCounter from "./AnimatedCounter";
 
 export default function AboutSection() {
   const stats = [
