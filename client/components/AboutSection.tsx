@@ -12,10 +12,15 @@ import AnimatedCounter from "./AnimatedCounter";
 
 export default function AboutSection() {
   const stats = [
-    { number: "500+", label: "Projects Delivered", icon: <Target /> },
-    { number: "50+", label: "Expert Team Members", icon: <Users /> },
-    { number: "98%", label: "Client Satisfaction", icon: <Award /> },
-    { number: "5+", label: "Years of Excellence", icon: <TrendingUp /> },
+    { number: 500, suffix: "+", label: "Projects Delivered", icon: <Target /> },
+    { number: 50, suffix: "+", label: "Expert Team Members", icon: <Users /> },
+    { number: 98, suffix: "%", label: "Client Satisfaction", icon: <Award /> },
+    {
+      number: 5,
+      suffix: "+",
+      label: "Years of Excellence",
+      icon: <TrendingUp />,
+    },
   ];
 
   const values = [
