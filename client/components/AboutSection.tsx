@@ -46,9 +46,9 @@ export default function AboutSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-4">
-            <div className="flex items-center space-x-2 bg-primary/10 px-4 py-2 rounded-full">
-              <Users className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-primary">
+            <div className="flex items-center space-x-2 bg-scalinova-gold/20 px-4 py-2 rounded-full hover-lift hover-glow group animate-bounce-slow cursor-pointer">
+              <Users className="w-4 h-4 text-scalinova-teal group-hover:animate-wiggle" />
+              <span className="text-sm font-medium text-scalinova-teal group-hover:text-animated-gradient">
                 About Scalinova
               </span>
             </div>
