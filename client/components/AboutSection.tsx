@@ -53,9 +53,9 @@ export default function AboutSection() {
               </span>
             </div>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 animate-slide-up">
             Empowering Businesses Through{" "}
-            <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-scalinova-teal via-scalinova-blue to-scalinova-green-nova bg-clip-text text-transparent text-animated-gradient hover-tilt inline-block">
               Technology Excellence
             </span>
           </h2>
