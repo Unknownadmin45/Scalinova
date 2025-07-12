@@ -160,7 +160,7 @@ export default function ServicesSection() {
 
         {/* CTA */}
         <div className="text-center">
-          <div className="bg-card border border-scalinova-gold/30 rounded-2xl p-8 lg:p-12 max-w-4xl mx-auto">
+          <div className="bg-card border border-scalinova-gold/30 rounded-2xl p-8 lg:p-12 max-w-4xl mx-auto group hover-glow">
             <div className="flex items-center justify-center mb-6">
               <Cog className="w-12 h-12 text-scalinova-teal group-hover:animate-spin transition-all duration-300" />
             </div>
